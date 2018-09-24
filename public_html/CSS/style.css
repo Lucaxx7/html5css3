@@ -1,0 +1,31 @@
+/**
+ Folha de estilo principal do html5 + css3
+ @author Lucas Souza
+
+ */
+
+/****************  IMPORTANDO FONT ****************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/**************** Principal ****************/
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #000000;
+	/*background-image: url("../imagens/background.png");*/
+	/*background-attachment: fixed; /* fixa o background */
+	/*background-size: cover; /* manter o tamanho de forma re
+	font-size: 1em; /* 1em = 16 px */
+}
+#main{
+	max-width: 1024px;
+	background-color: #ffffff;
+	/*background-image: url("../imagens/texturaagua.gif");*/
+	margin: 0 auto; /* centralizar a div */
+}
+
+
+
+/*********************************** Tratamento Responsivo *************************************/
+
+img {
+	max-width: 100%; /* todas as imagens do site ficam responsivas */
+}
