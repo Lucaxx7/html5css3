@@ -1,0 +1,30 @@
+
+
+
+/*
+float: right; (flutua a direita do elemento anterior)
+float: left; (flutua a esquerda do elmento anterior)
+*/
+#vermelho{
+width: 250px;
+ height: 250px;
+  background-color: #ff0000;
+  float: left;
+   
+}
+
+#verde{
+	width: 250px; 
+	height: 250px; 
+	background-color: #00ff00; 
+	float: left;
+	
+}
+
+#azul{
+	width: 250px; 
+	height: 250px; 
+	background-color: #0000ff; 
+	float: left;
+	
+}
