@@ -6,10 +6,11 @@
 
 /****************  IMPORTANDO FONT ****************/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 /**************** Principal ****************/
 body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: #ffffff;
+	background-color: #87CEFA;
 	/*background-image: url("../imagens/sonicbackground.jpg");*/
 	/*background-attachment: fixed; /* fixa o background */
 	/*background-size: cover; /* manter o tamanho de forma responiva */
@@ -17,7 +18,7 @@ body {
 }
 #main{
 	max-width: 1024px;
-	/*background-color: #ffffff;*/
+	background-color: #ffffff;
 	/*background-image: url("../imagens/sonicbackground.jpg");*/
 	margin: 0 auto; /* centralizar a div */
 	margin-top: 50px; /* box model*/
@@ -50,6 +51,7 @@ nav{
 	width: 100%;
 	max-width: 1024px;
 	position: absolute;
+	z-index: 3;
 }
 
 nav ul{
@@ -67,8 +69,8 @@ nav ul{
 
 nav > ul > li{
 	float: left;
-	width: 24.903%; /* 4 elementos do seu primário */
-	border-right: 1px solid #000000;
+	width: 25%; /* 4 elementos do seu primário */
+	/*border-right: 1px solid #000000;*/
 }
 
 nav > ul > li> a{
@@ -125,8 +127,67 @@ nav li:hover ul{
 .Fixar{
 	position: fixed;
 	top: 0;
-	z-index: 3;
+	
 }
+
+/******** Conteúdo em Destaque - Home ********/
+
+/*** banner ***/
+#banner{
+	margin-top: 52px;
+	max-width: 1024px;
+	height: 350px;
+	/** Usado para flexibilizar o layout **/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#banner img{
+	filter: brightness(40%);
+}
+
+#banner h1 {
+	position: absolute;
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Roboto' , sans-serif;
+	font-size: 2.7em;
+	text-transform: uppercase; /*maiusculo*/
+}
+
+/*** heading  ***/
+#heading{
+	width: 80%;
+	margin: 0 auto;
+	padding: 35px;
+
+}
+
+#heading h2{
+	text-align: center;
+	font-weight: 400;
+}
+
+#ouriço {
+	font-weight: 600;
+	color: blue;
+
+}
+
+#sonic {
+	font-weight: 600;
+	color: blue;
+}
+
+/****** blocos ******/
+#destaque{
+	max-width: 1024px;
+	height: 320px;
+}
+
+
+
 
 /**************** Rodapé **************/
 
@@ -141,6 +202,82 @@ footer{
 	font-size: 0.75em;
 }
 
+.blocos{
+	width: 30.76%; /* (315/1024)*100 */
+	height: 320px;
+	background-color: #ffffff;
+	float: left;
+	margin-left: 1.95%; /* (20px/1024px)*100 */
+	border: 1px solid  #dedede;
+	text-align: center;
+	position: relative; /*posicionamento do botão*/ 
+}
+
+.blocos p{
+	padding: 0px 10px 0px 10px;
+	text-align: left;
+}
+.blocos a{
+	width: 80px;
+	padding: 10px 0px 10px 0px;
+	display: block;
+	background-color: #0000ff;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+
+}
+
+/***** Formulário de Contato *****/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #0000ff;
+	margin-bottom: 20px;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #0000ff;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #0000ff;
+	border-radius: 5px;
+	border: 1px solid #ffffff;
+	padding: 10px 25px 10px 25px;
+	color: #fff;
+}
+
+/*********** 1º ponto de quebra *************/
+@media screen and (max-width: 1058px){
+	body{
+		margin: 0;
+	}
+	#main{
+		margin: 0;
+	}
+}
+
+/*********** 2º ponto de quebra *************/
+@media screen and (max-width: 920px){
+	body{
+		margin-top: 50;
+	}
 	
 
 /************* Tratamento responsivo ***************/
@@ -160,6 +297,40 @@ footer{
 	text-align: center;
 }
 
+#banner{
+	margin-top: 117px;
+	height: 0;
+}
+
+#banner h1{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#heading{
+	width: 90%;
+	padding: 25px;
+	margin-top: 60px;
+}
+
+#heading h2{
+	font-size: 1.2em;
+}
+
+/*** blocos ***/
+#destaque{
+	max-width: 315px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.blocos{
+	width: 100%;
+	height: 320px;
+	float: none;
+	margin: 0;
+	margin-bottom: 20px;
+}
 header img{
 	margin-top: 0px;
 	margin-left: 0px;
